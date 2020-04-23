@@ -25,7 +25,7 @@ void array_print(data_node *array,int n)
 
 }
 
-
+/* 依次从最小单位（一个元素分组）开始排序merge各个组，直至整个数组全部merge成功 */
 void merge(data_node *array,int p,int q, int r)
 {
 int length=r-p+1;
